@@ -24,7 +24,7 @@ const result2= employees.reduce(
 
 // Используя метод map, преобразуйте имена всех сотрудников к верхнему регистру.
 const result3 = employees
-.map(({name, salary}) => { return { name: name.toUpperCase(), salary: salary };  });
+.map(({name, salary}) => ({ name: name.toUpperCase(), salary }));
     
     console.log(result3);
 
